@@ -48,6 +48,20 @@ bun test
 
 Syntax highlighting grammars are fetched into `src/grammars` by `scripts/fetch-grammars.mjs`.
 
+## Publishing
+
+Releases are published to npm automatically via GitHub Actions (`.github/workflows/publish.yml`), which runs typecheck, tests, and `npm publish --provenance` using npm Trusted Publishing (OIDC) — no npm token needed.
+
+To release a new version:
+
+1. Bump the version and create the matching tag:
+   ```bash
+   npm version patch   # or minor/major — bumps package.json and tags the commit
+   git push --tags
+   ```
+2. Create a GitHub release from that tag (or `gh release create <tag> --generate-notes`).
+3. The workflow publishes the exact version from the tag. It will fail if the tag and `package.json` version don't match.
+
 ## Not built by the OpenCode team
 
 This project uses "opencode" as part of its name because it's an opencode plugin. It is not built by the OpenCode team and is not affiliated with OpenCode in any way.
