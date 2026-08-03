@@ -1,0 +1,8 @@
+{
+  "name": "opencode-diff-feedback",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "bun install",
+  "remoteUser": "node"
+}
