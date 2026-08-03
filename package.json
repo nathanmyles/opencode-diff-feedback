@@ -10,8 +10,20 @@
     ".": "./src/index.ts",
     "./tui": "./src/tui.tsx"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanmyles/opencode-diff-feedback.git"
+  },
+  "homepage": "https://github.com/nathanmyles/opencode-diff-feedback#readme",
+  "bugs": {
+    "url": "https://github.com/nathanmyles/opencode-diff-feedback/issues"
+  },
+  "engines": {
+    "opencode": ">=1.0.0"
+  },
   "scripts": {
-    "test": "bun test"
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "@opencode-ai/plugin": ">=1.4.0",

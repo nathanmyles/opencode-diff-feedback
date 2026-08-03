@@ -1,1 +1,1 @@
-export { default as tui } from "./tui";
+export { default } from "./tui";

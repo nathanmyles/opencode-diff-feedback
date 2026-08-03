@@ -29,7 +29,7 @@ Comments are summarized back into the prompt so the agent can react to your feed
 
 ## Installation
 
-This is an opencode TUI plugin. Install it alongside your other plugins, e.g.:
+This is an opencode TUI plugin. Add it to your TUI config (`tui.json`):
 
 ```json
 {
