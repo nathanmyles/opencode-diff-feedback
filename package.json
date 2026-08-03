@@ -1,11 +1,21 @@
 {
   "name": "opencode-diff-feedback",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "license": "GPL-3.0-only",
   "description": "Inline diff annotation plugin for opencode — leave feedback on agent-proposed code changes",
-  "keywords": ["opencode", "plugin", "tui", "diff", "feedback", "review"],
-  "files": ["src", "assets"],
+  "keywords": [
+    "opencode",
+    "plugin",
+    "tui",
+    "diff",
+    "feedback",
+    "review"
+  ],
+  "files": [
+    "src",
+    "assets"
+  ],
   "exports": {
     ".": "./src/index.ts",
     "./tui": "./src/tui.tsx"
