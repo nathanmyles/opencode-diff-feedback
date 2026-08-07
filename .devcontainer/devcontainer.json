@@ -3,6 +3,10 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "bun install",
-  "remoteUser": "node"
+  "postCreateCommand": "bun ci",
+  "remoteUser": "node",
+  "mounts": [
+    "source=${localEnv:HOME}/.config/opencode,target=/home/node/.config/opencode,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.local/share/opencode,target=/home/node/.local/share/opencode,type=bind,consistency=cached"
+  ]
 }
